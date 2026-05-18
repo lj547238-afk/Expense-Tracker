@@ -1,0 +1,104 @@
+.add-header {
+  margin-bottom: 28px;
+}
+
+.add-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+  align-items: start;
+}
+
+.add-form-card {
+  position: relative;
+}
+
+.success-banner {
+  background: rgba(16, 217, 160, 0.1);
+  border: 1px solid rgba(16, 217, 160, 0.3);
+  border-radius: 10px;
+  padding: 14px 18px;
+  color: var(--green);
+  font-weight: 500;
+  margin-bottom: 24px;
+  font-size: 14px;
+  animation: slideIn 0.3s ease;
+}
+
+.form-control.error {
+  border-color: var(--red);
+  background: rgba(244, 63, 94, 0.05);
+}
+
+.form-error {
+  font-size: 12px;
+  color: var(--red);
+  margin-top: 6px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.cat-picker-card {}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.cat-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 12px 6px;
+  border-radius: 10px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.cat-btn:hover {
+  border-color: var(--cat-color);
+  background: color-mix(in srgb, var(--cat-color) 10%, transparent);
+}
+
+.cat-btn.selected {
+  border-color: var(--cat-color);
+  background: color-mix(in srgb, var(--cat-color) 15%, transparent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--cat-color) 30%, transparent);
+}
+
+.cat-emoji {
+  font-size: 20px;
+}
+
+.cat-name {
+  font-size: 11px;
+  color: var(--text2);
+  text-align: center;
+}
+
+.tip-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.tip-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .add-layout {
+    grid-template-columns: 1fr;
+  }
+}

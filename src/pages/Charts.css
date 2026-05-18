@@ -1,0 +1,89 @@
+.chart-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.chart-tab {
+  padding: 9px 18px;
+  border-radius: 99px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text2);
+  font-size: 13.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: 'DM Sans', sans-serif;
+}
+
+.chart-tab:hover {
+  color: var(--text);
+  border-color: var(--border2);
+}
+
+.chart-tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.chart-area {
+  min-height: 420px;
+}
+
+.chart-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.chart-tooltip {
+  background: var(--card2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 16px;
+  box-shadow: var(--shadow);
+}
+
+.tooltip-label {
+  font-size: 12px;
+  color: var(--text2);
+  margin-bottom: 4px;
+}
+
+.tooltip-value {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Syne', sans-serif;
+}
+
+.pie-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 32px;
+  align-items: center;
+}
+
+.pie-legend-full {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pie-legend-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--bg3);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 900px) {
+  .pie-layout {
+    grid-template-columns: 1fr;
+  }
+}
